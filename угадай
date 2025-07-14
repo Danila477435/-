@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class QuizGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int score = 0; // счётчик правильных ответов
+
+        // Вопрос №1
+        System.out.println("Вопрос №1: Столица Франции?");
+        System.out.println("A) Берлин");
+        System.out.println("B) Париж");
+        System.out.println("C) Мадрид");
+        System.out.println("D) Рим");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer1 = scanner.nextLine();
+        if(answer1.equalsIgnoreCase("B")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №2
+        System.out.println("Вопрос №2: Сколько планет в Солнечной системе?");
+        System.out.println("A) 7");
+        System.out.println("B) 8");
+        System.out.println("C) 9");
+        System.out.println("D) 10");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer2 = scanner.nextLine();
+        if(answer2.equalsIgnoreCase("B")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №3
+        System.out.println("Вопрос №3: Какой самый большой океан на Земле?");
+        System.out.println("A) Атлантический");
+        System.out.println("B) Индийский");
+        System.out.println("C) Тихий");
+        System.out.println("D) Северный Ледовитый");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer3 = scanner.nextLine();
+        if(answer3.equalsIgnoreCase("C")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Подведение итогов
+        System.out.println("Игра закончена. Ваш результат: " + score + "/3");
+        scanner.close();
+    }
+}
