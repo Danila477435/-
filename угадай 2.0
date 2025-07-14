@@ -1,0 +1,135 @@
+import java.util.Scanner;
+
+public class QuizGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int score = 0; // счётчик правильных ответов
+
+        // Вопрос №1
+        System.out.println("Вопрос №1: Столица Франции?");
+        System.out.println("A) Берлин");
+        System.out.println("B) Париж");
+        System.out.println("C) Мадрид");
+        System.out.println("D) Рим");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer1 = scanner.nextLine();
+        if(answer1.equalsIgnoreCase("B")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №2
+        System.out.println("Вопрос №2: Сколько планет в Солнечной системе?");
+        System.out.println("A) 7");
+        System.out.println("B) 8");
+        System.out.println("C) 9");
+        System.out.println("D) 10");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer2 = scanner.nextLine();
+        if(answer2.equalsIgnoreCase("B")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №3
+        System.out.println("Вопрос №3: Какой самый большой океан на Земле?");
+        System.out.println("A) Атлантический");
+        System.out.println("B) Индийский");
+        System.out.println("C) Тихий");
+        System.out.println("D) Северный Ледовитый");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer3 = scanner.nextLine();
+        if(answer3.equalsIgnoreCase("C")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Подведение итогов
+        System.out.println("Игра закончена. Ваш результат: " + score + "/3");
+        scanner.close();
+        
+        
+        // Вопрос №4
+        System.out.println("Вопрос №4:сколько сердец у кальмара?");
+        System.out.println("A) 2");
+        System.out.println("B) 3");
+        System.out.println("C) 0");
+        System.out.println("D) 1");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer1 = scanner.nextLine();
+        if(answer1.equalsIgnoreCase("B")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №5
+        System.out.println("Вопрос №5:Кто написал (Война и мир) ?");
+        System.out.println("A) Лев толстой");
+        System.out.println("B) Антон чехов");
+        System.out.println("C) Александр пушкин");
+        System.out.println("D) данил");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer2 = scanner.nextLine();
+        if(answer2.equalsIgnoreCase("D")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №6
+        System.out.println("Вопрос №6: Назовите самую длинную реку Европы:?");
+        System.out.println("A) Дунай");
+        System.out.println("B) Енисей");
+        System.out.println("C) Волга");
+        System.out.println("D) Байкал");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer3 = scanner.nextLine();
+        if(answer3.equalsIgnoreCase("C")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+        
+        // Вопрос №7
+        System.out.println("Вопрос №7:В каком городе находятся знаменитые Красная площадь и Кремль?
+");
+        System.out.println("A) Каленинград");
+        System.out.println("B) я не живу в Росси");
+        System.out.println("C) Пенза");
+        System.out.println("D) Москва");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer2 = scanner.nextLine();
+        if(answer2.equalsIgnoreCase("D")) {
+            System.out.println("Правильно!\n");
+            score++;
+        } else {
+            System.out.println("Неправильно.\n");
+        }
+
+        // Вопрос №8
+        System.out.println("Вопрос №8: Когда произошла Октябрьская революция в России?");
+        System.out.println("A) 1917 г.");
+        System.out.println("B) 1919 г.");
+        System.out.println("C) 1918 г.");
+        System.out.println("D) 1920 г.");
+        System.out.print("Ваш ответ (буква A, B, C или D): ");
+        String answer3 = scanner.nextLine();
+        if(answer3.equalsIgnoreCase("A")) {
+            System.out.println("Правильно!\n");
+
+        // Подведение итогов
+        System.out.println("Игра закончена. Ваш результат: " + score + "/3");
+        scanner.close();
+
+    }
+}
