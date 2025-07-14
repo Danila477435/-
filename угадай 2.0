@@ -62,8 +62,8 @@ public class QuizGame {
         System.out.println("C) 0");
         System.out.println("D) 1");
         System.out.print("Ваш ответ (буква A, B, C или D): ");
-        String answer1 = scanner.nextLine();
-        if(answer1.equalsIgnoreCase("B")) {
+        String answer4 = scanner.nextLine();
+        if(answer4.equalsIgnoreCase("B")) {
             System.out.println("Правильно!\n");
             score++;
         } else {
@@ -77,8 +77,8 @@ public class QuizGame {
         System.out.println("C) Александр пушкин");
         System.out.println("D) данил");
         System.out.print("Ваш ответ (буква A, B, C или D): ");
-        String answer2 = scanner.nextLine();
-        if(answer2.equalsIgnoreCase("D")) {
+        String answer5 = scanner.nextLine();
+        if(answer5.equalsIgnoreCase("D")) {
             System.out.println("Правильно!\n");
             score++;
         } else {
@@ -92,8 +92,8 @@ public class QuizGame {
         System.out.println("C) Волга");
         System.out.println("D) Байкал");
         System.out.print("Ваш ответ (буква A, B, C или D): ");
-        String answer3 = scanner.nextLine();
-        if(answer3.equalsIgnoreCase("C")) {
+        String answer6 = scanner.nextLine();
+        if(answer6.equalsIgnoreCase("C")) {
             System.out.println("Правильно!\n");
             score++;
         } else {
@@ -108,8 +108,8 @@ public class QuizGame {
         System.out.println("C) Пенза");
         System.out.println("D) Москва");
         System.out.print("Ваш ответ (буква A, B, C или D): ");
-        String answer2 = scanner.nextLine();
-        if(answer2.equalsIgnoreCase("D")) {
+        String answer7 = scanner.nextLine();
+        if(answer7.equalsIgnoreCase("D")) {
             System.out.println("Правильно!\n");
             score++;
         } else {
@@ -123,8 +123,8 @@ public class QuizGame {
         System.out.println("C) 1918 г.");
         System.out.println("D) 1920 г.");
         System.out.print("Ваш ответ (буква A, B, C или D): ");
-        String answer3 = scanner.nextLine();
-        if(answer3.equalsIgnoreCase("A")) {
+        String answer8 = scanner.nextLine();
+        if(answer8.equalsIgnoreCase("A")) {
             System.out.println("Правильно!\n");
 
         // Подведение итогов
