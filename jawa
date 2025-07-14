@@ -1,0 +1,52 @@
+// Импортируем класс Scanner для работы с вводом данных с клавиатуры
+import java.util.Scanner;
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        // Создаем объект Scanner для считывания данных с клавиатуры
+        Scanner scanner = new Scanner(System.in);
+
+        // Запрашиваем у пользователя первое число
+        System.out.print("Введите первое число: ");
+        double num1 = scanner.nextDouble(); // Считываем первый оператор (число)
+
+        // Запрашиваем у пользователя второе число
+        System.out.print("Введите второе число: ");
+        double num2 = scanner.nextDouble(); // Считываем второй оператор (число)
+
+        // Просим выбрать одну из четырёх возможных операций
+        System.out.print("Выберите операцию (+, -, *, /): ");
+        char operator = scanner.next().charAt(0); // Получаем символ оператора
+
+        // Теперь выполним нужную операцию и сохраним результат
+        double result;
+        switch (operator) {
+            case '+': // Если выбрана операция сложения
+                result = num1 + num2;
+                break;
+            case '-': // Если выбрана операция вычитания
+                result = num1 - num2;
+                break;
+            case '*': // Если выбрана операция умножения
+                result = num1 * num2;
+                break;
+            case '/': // Если выбрана операция деления
+                if (num2 != 0) { // Проверяем, чтобы не произошло деление на ноль
+                    result = num1 / num2;
+                } else {
+                    System.out.println("Ошибка: Нельзя делить на ноль!");
+                    return; // Завершаем выполнение программы
+                }
+                break;
+            default: // Если была введена неверная операция
+                System.out.println("Некорректная операция. Используйте один из символов: +, -, *, /");
+                return; // Завершаем выполнение программы
+        }
+
+        // Наконец, выводим полученный результат
+        System.out.println("Результат: " + result);
+
+        // Закрываем ресурс Scanner
+        scanner.close();
+    }
+}
